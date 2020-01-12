@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bawei6.news">
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <application android:supportsRtl="true" android:label="@string/app_name" android:theme="@style/AppTheme" android:icon="@mipmap/ic_launcher" android:allowBackup="true" android:roundIcon="@mipmap/ic_launcher_round" xmlns:android="http://schemas.android.com/apk/res/android">
+    <activity android:name=".user.SelectActivity"/>
+    <activity android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER" xmlns:android="http://schemas.android.com/apk/res/android"/>
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>

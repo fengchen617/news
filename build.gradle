@@ -1,0 +1,75 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+plugins {
+    id "calces.appconfig" version "1.0.11"
+}
+appConfig {
+    debugEnable true
+    apps {
+        app {
+            mainActivity ".MainActivity"
+            modules ':HomePage' , ':VideoModel' ,':HeadLine' , ':MineModel'
+        }
+    }
+
+    //主页
+    modules {
+        HomePage{
+            name ':HomePage'
+            applicationId "com.bawei6.homepage"
+//            mainActivity ".My_MainActivity"
+            isRunAlone false
+        }
+
+    //视频
+
+        VideoModel{
+            name ':VideoModel'
+            applicationId "com.bawei6.videomodel"
+//            mainActivity ".My_MainActivity"
+            isRunAlone false
+
+        }
+    //头条
+        HeadLine{
+            name ':HeadLine'
+            applicationId "com.bawei6.headline"
+//            mainActivity ".My_MainActivity"
+            isRunAlone false
+        }
+
+    //我的
+        MineModel{
+            name ':MineModel'
+            applicationId "com.bawei6.minemodel"
+//            mainActivity ".My_MainActivity"
+            isRunAlone false
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
