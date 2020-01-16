@@ -8,6 +8,7 @@ import androidx.lifecycle.LiveData;
 
 import com.bawei6.basemodel.net.protocol.resp.BaseRespEntity;
 import com.bawei6.news.bean.SelectBean;
+import com.bawei6.news.transmit.SelectMiddle;
 
 import java.util.List;
 

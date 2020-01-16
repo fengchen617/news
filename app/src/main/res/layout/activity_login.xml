@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_height="match_parent"
+    tools:context=".user.LoginActivity">
+
+    <com.bawei6.basemodel.ui.TitleBar
+        android:id="@+id/login_title_bar"
+        android:background="@android:color/holo_red_light"
+        app:attr_base_title_bar_text="@string/login_name"
+        app:attr_base_title_bar_img_left="@drawable/ic_action_close"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="微头条"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_red_light"
+        android:gravity="center"/>
+    <ImageView
+        android:src="@mipmap/my_title_img"
+        android:scaleType="fitXY"
+        android:id="@+id/select_title_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="130dp"/>
+    <include layout="@layout/login_zh_item"/>
+    <include layout="@layout/login_mm_item"/>
+    <include layout="@layout/login_select"/>
+
+
+    <include layout="@layout/login_jump"/>
+</LinearLayout>

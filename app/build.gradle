@@ -34,4 +34,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation project(path: ':BaseModel')
+    implementation project(path: ':VideoModel')
+    implementation project(path: ':MineModel')
+    implementation project(path: ':HeadLine')
+    implementation project(path: ':HomePage')
 }

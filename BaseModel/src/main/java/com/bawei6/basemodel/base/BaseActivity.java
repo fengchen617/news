@@ -29,8 +29,6 @@ public abstract class BaseActivity<VM extends ViewModel,D extends ViewDataBindin
         setStatusBar();
         super.onCreate(savedInstanceState);
         mDataBinding= DataBindingUtil.setContentView(this,getLayoutId());
-
-
         //获取ViewModel的泛型类型
         Class<VM> clazz= (Class<VM>) ClassUtils.getParameterizedClazz(this);
         //ViewModel实例化
@@ -77,7 +75,7 @@ public abstract class BaseActivity<VM extends ViewModel,D extends ViewDataBindin
                     | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
             decorView.setSystemUiVisibility(option);
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            getWindow().setStatusBarColor(Color.TRANSPARENT);
+            getWindow().setStatusBarColor(Color.RED);
         }
         //Android 4.4 - 5.0
         else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {

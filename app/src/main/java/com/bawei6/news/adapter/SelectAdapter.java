@@ -1,5 +1,7 @@
 package com.bawei6.news.adapter;
 
+import android.view.View;
+
 import androidx.annotation.Nullable;
 
 import com.bawei6.news.R;
